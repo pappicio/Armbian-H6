@@ -10,7 +10,7 @@ you can:
 
 or 
 
-2) download reasy2go system with Homeassistant Supervised installed.
+2) download reasy2go system with Homeassistant Supervised installed. ( based on:  Armbian 22.11.0-trunk Bullseye with Linux 5.15.69-sunxi64 )
 
 
 1-) you need:
