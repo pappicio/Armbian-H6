@@ -13,7 +13,7 @@ or
 2) download reasy2go system with Homeassistant Supervised installed.
 
 
-1) you need:
+1-) you need:
 
 an HDMI LCD and an USB keyboard to 1st time configure system;
 
@@ -79,7 +79,7 @@ http://ip-tvbox:8123
 
 
 
-2)
+2-)
 
 download ready2go system from releases in thi github
 
