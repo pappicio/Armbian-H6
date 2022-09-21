@@ -1,4 +1,5 @@
 how to install HomeAssistant Supervised on Allwinner H6 TvBoxes
+
 repeate, only Android TVBOXES with Allwinner H6 CPU are comatible with this system!
 
 ok let's go!
@@ -6,35 +7,51 @@ ok let's go!
 you can:
 
 1) compile theese sources from original armbian githib
+
 or 
+
 2) download reasy2go system with Homeassistant Supervised installed.
 
 
 1) you need:
+
 an HDMI LCD and an USB keyboard to 1st time configure system;
+
 balenaetcher tool to flash system into a microSD
+
 use the system (arbian.img file compiled)
+
 flash microSD with balenaetcher, choose the .img file, and flash it
+
 connect the TVBOX to a LAN CABLE...
+
 insert microSD into Allwinner H6 CPU TVBOX and power on it... 
+
 confogure system, set passwor dfor root user and new user (I suggest pi name!)
+
 into shell type:
+
 sudo armbian-config, menu 2; manage wifi and choice your own wifi (SSID), insert password and connect to it 
 
 winscp and putty to: configure all needed to install docjer and homeassistant supervised as next explained
 
 open winscp, new connection and inser tvbox ip, usenrname and password, connect
+
 now open shell, putty, (2 pc icon on top/left of winscp window)
 
 type:
 
 sudo apt update
+
 sudo apt upgrade
 
 from this link
+
 https://github.com/home-assistant/supervised-installer
 
+
 ans this one
+
 https://github.com/home-assistant/os-agent/tree/main#using-home-assistant-supervised-on-debian
 
 choice the .deb file for you archotecture (aarch64), so:
@@ -46,9 +63,11 @@ copy it using winscp into  /tmp folder of your tvbox (from tab on left to the ta
 so into shell type:
 
 wget https://github.com/home-assistant/os-agent/releases/download/1.3.0/os-agent_1.3.0_linux_aarch64.deb
+
 sudo dpkg -i os-agent_1.3.0_linux_aarch64.deb
 
 continue to follow also this guide:
+
 https://github.com/home-assistant/supervised-installer
 
 and in graphic window choice the target system to instll HA: raspberry4-64bit (is good even debian system is.....)
@@ -57,51 +76,85 @@ wait for 20/30 minutes and finally, connect to:
 
 http://ip-tvbox:8123
 
-the end.
+
+
 
 2)
+
 download ready2go system from releases in thi github
+
 and you need also:
+
 an HDMI LCD and an USB keyboard to 1st time configure system;
+
 balenaetcher tool to flash system into a microSD
+
 use the system (arbian.img.gz image)
+
 flash microSD with balenaetcher, choose the .img.gz system file, and flash it
+
 connect the TVBOX to a LAN CABLE...
+
 insert microSD into Allwinner H6 CPU TVBOX and power on it... 
+
 into shell type:
+
 sudo ifconfig so you can see the assigned IP.
+
 now by winscp you can connect and have 2 user ready:
+
 root (password: root)
+
 pi   (passwor pi)
+
 new connection on winscp, insert tvbox ip
+
 usenrame:pi; password:pi
+
 open remote shell 
+
 and type:
+
 sudo passwd root
+
 (insert as asked pi password, so pi)
+
 insert new root password twice, 
+
 repeat:
+
 sudo passwd pi
+
 insert new pi password twice
+
 ok, you now changed default root and pi password, write them somewhere ro remember if needed
 
 if you have wrong feee psace on mivrosd, by shell write:
+
 sudo bash /etc/init.d/resize2fs start
+
 sudo reboot
+
 now...
+
 write on shell:
+
 sudo armbian-config, 
+
 menu 2; manage wifi and choice your own wifi (SSID), insert password and connect to it 
+
 sudo reboot, wait 20/30 minutes and then you go to:
+
 http://TVBOX-IP:8123 and enjoy
 
 to configure homeassistant
 
 in both 1 and 2, you can execute:
+
 sudo armbian-config and menu 1, choice to write system into intenral emmc, voice nr:2, wait 5 minutes and then sgut down system, remove microsd
+
 and power on tvbox
 
-the end!
 
 <>
 <>
