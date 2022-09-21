@@ -1,0 +1,13 @@
+diff --git a/drivers/net/wireless/xradio/sdio.c b/drivers/net/wireless/xradio/sdio.c
+index cfff47120..d7db3f4a4 100644
+--- a/drivers/net/wireless/xradio/sdio.c
++++ b/drivers/net/wireless/xradio/sdio.c
+@@ -14,7 +14,7 @@
+ #include <linux/mmc/sdio_func.h>
+ #include <linux/mmc/card.h>
+ #include <linux/mmc/sdio.h>
+-#include <asm/mach-types.h>
++//#include <asm/mach-types.h>
+ #include <linux/of.h>
+ #include <linux/of_irq.h>
+ #include <linux/interrupt.h>
