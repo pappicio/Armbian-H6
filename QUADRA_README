@@ -1,0 +1,29 @@
+This file patches armbian mainline (current) to build Quadra firmware (also T95 mini/max boards based on H6 SoC).
+
+To use,
+
+1.  Install armbian: "git clone https://github.com/armbian/build
+2.  Type "cd build"
+3.  Copy this "quadra-patches.zip" file here
+4.  Type "sudo unzip quadra-patches".  Confirm overwrites
+5.  Build armbian as usual:  "sudo ./compile.sh"
+
+Select board aw-h6-tv in the CSC section.  Select "current".  Edge is WIP (xr819 wifi not working on kernels 5.19+).  XFCE Desktop is known to work.
+
+Shortcuts:
+
+1.  Server builds:  
+
+sudo ./compile.sh  BOARD=aw-h6-tv BRANCH=current RELEASE=bullseye BUILD_MINIMAL=no BUILD_DESKTOP=no KERNEL_ONLY=no KERNEL_CONFIGURE=no COMPRESS_OUTPUTIMAGE=sha,gpg,img
+
+2.  Desktop builds:
+
+sudo ./compile.sh  BOARD=aw-h6-tv BRANCH=current RELEASE=bullseye BUILD_MINIMAL=no BUILD_DESKTOP=yes KERNEL_ONLY=no KERNEL_CONFIGURE=no DESKTOP_ENVIRONMENT=xfce DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base DESKTOP_APPGROUPS_SELECTED="browsers" COMPRESS_OUTPUTIMAGE=sha,gpg,img 
+
+3.  If you changed patch files and want to force recompiling of the kernel, add:
+
+	USE_CCACHE=no
+
+Note:
+
+Armbian won't update itself as we changed 2 build files.  So if you want to update Armbian, easiest way is to re-install Armbian, re-apply this patch and rebuild.
