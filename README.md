@@ -1,3 +1,5 @@
+***IMPORTANT NOTE: IF YOU HAVE OR BUY A 4 GB RAM ALLWINNER H6 TVBOX, REMEMBER, KERNEL WILL SEE ONLY 3 OF 4 GB OF RAM. REMENBER!!!***
+
 how to install HomeAssistant Supervised on Allwinner H6 TvBoxes
 
 repeate, only Android TVBOXES with Allwinner H6 CPU are comatible with this system!
