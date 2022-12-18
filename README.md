@@ -51,7 +51,7 @@ sudo apt upgrade
 
 ###this is permanent command
 
-sudo echo -e "Hai\nHello\nTesting\n" >> /etc/modules-load.d/modules.conf
+sudo echo -e "\noverlay\nnft_chain_nat\nnft_counter\nnft_compat\nnf_tables\n" >> /etc/modules-load.d/modules.conf
 
 ###this is temlorary command 
 
