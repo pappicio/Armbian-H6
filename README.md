@@ -64,9 +64,9 @@ copy it using winscp into  /tmp folder of your tvbox (from tab on left to the ta
 
 so into shell type:
 
-wget https://github.com/home-assistant/os-agent/releases/download/1.3.0/os-agent_1.3.0_linux_aarch64.deb
+wget https://github.com/home-assistant/os-agent/releases/download/1.3.0/os-agent_1.4.1_linux_aarch64.deb
 
-sudo dpkg -i os-agent_1.3.0_linux_aarch64.deb
+sudo dpkg -i os-agent_1.4.1_linux_aarch64.deb
 
 
 continue to follow also this guide:
