@@ -47,6 +47,8 @@ sudo apt update
 
 sudo apt upgrade
 
+sudo modprobe overlay && sudo modprobe nft_chain_nat && sudo modprobe nft_counter && sudo modprobe nft_compat && sudo modprobe nf_tables
+
 from this link
 
 https://github.com/home-assistant/supervised-installer
