@@ -47,7 +47,17 @@ sudo apt update
 
 sudo apt upgrade
 
+
+
+###this is permanent command
+
+sudo echo -e "Hai\nHello\nTesting\n" >> /etc/modules-load.d/modules.conf
+
+###this is temlorary command 
+
 sudo modprobe overlay && sudo modprobe nft_chain_nat && sudo modprobe nft_counter && sudo modprobe nft_compat && sudo modprobe nf_tables
+
+
 
 from this link
 
