@@ -82,8 +82,12 @@ sudo apt --fix-missing update
 
 sudo apt-get update --fix-missing
 
+sudo apt-get install jq wget curl avahi-daemon udisks2 libglib2.0-bin network-manager dbus apparmor -y
+
+
 wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
-dpkg -i homeassistant-supervised.deb
+
+sudo dpkg -i homeassistant-supervised.deb
 
 now...
 
