@@ -194,7 +194,7 @@ and power on tvbox, now it boots on internal emmc (some devices have NAND flash 
 
 
 
-
+sudo dockerd
 
 
 
